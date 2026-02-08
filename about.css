@@ -39,3 +39,23 @@ body{
   font-size:14px;
   line-height:1.6;
 }
+
+@media (max-width: 768px) {
+  .about{
+    flex-direction: column;   
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-img img{
+    width: 100%;     
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .about-text{
+    width: 100%;
+  }
+
+}
+
