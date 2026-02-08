@@ -1,0 +1,87 @@
+
+/* Navbar */
+.navbar{
+  background:#00b3b3;
+  text-align:center;
+  padding:10px;
+}
+
+.navbar a{
+  color:#003333;
+  font-weight:bold;
+  text-decoration:none;
+  margin:0 10px;
+}
+
+.active{
+  text-decoration:underline;
+}
+body{
+  margin:0;
+  padding:0;
+  background:black;
+  font-family:Arial, sans-serif;
+}
+
+/* Enquiry box */
+.enquiry-content{
+  width:75%;
+  margin:30px auto;
+  background:#ffffff;
+  padding:25px;
+  border:2px solid #000;
+}
+
+/* Heading */
+.enquiry-content h2{
+  font-size:24px;
+  margin-bottom:15px;
+  color:#000;
+}
+
+/* Form labels */
+.enquiry-content label{
+  display:block;
+  font-size:14px;
+  margin-bottom:5px;
+  color:#000;
+}
+
+/* Inputs & textarea */
+.enquiry-content input,
+.enquiry-content textarea{
+  width:100%;
+  padding:8px;
+  margin-bottom:15px;
+  border:1px solid #000;
+  font-size:14px;
+}
+
+
+.enquiry-content textarea{
+  height:100px;
+  resize:none;
+}
+
+
+.enquiry-content button{
+  background:#00b3b3;
+  color:#003333;
+  padding:8px 20px;
+  border:none;
+  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.enquiry-content button:hover{
+  background:#009999;
+}
+
+/* Mobile responsive */
+@media(max-width:768px){
+  .enquiry-content{
+    width:90%;
+    padding:15px;
+  }
+}

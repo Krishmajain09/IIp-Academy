@@ -1,0 +1,60 @@
+
+body{
+  margin:0;
+  padding:0;
+  background:black;
+  font-family:Arial, sans-serif;
+}
+/* Navbar */
+.navbar{
+  background:#00b3b3;
+  text-align:center;
+  padding:10px;
+}
+
+.navbar a{
+  color:#003333;
+  font-weight:bold;
+  text-decoration:none;
+  margin:0 10px;
+}
+
+.active{
+  text-decoration:underline;
+}
+
+/* Course content box */
+.course-content{
+  width:75%;
+  margin:30px auto;
+  background:#ffffff;
+  padding:25px;
+  border:2px solid #000;
+}
+
+/* Heading */
+.course-content h2{
+  font-size:24px;
+  margin-bottom:12px;
+  color:#000;
+}
+
+/* List */
+.course-content ol{
+  margin-left:20px;
+}
+
+.course-content ol li{
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:8px;
+  color:#000;
+}
+
+/* Mobile responsive */
+@media(max-width:768px){
+  .course-content{
+    width:90%;
+    padding:15px;
+  }
+}

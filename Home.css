@@ -1,0 +1,279 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:black;
+}
+
+/* TOP CURVE HEADER */
+.top-curve{
+  background:linear-gradient(90deg,#00e5df,#0c8f8c);
+  height:140px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* right curve */
+.top-curve::after{
+  content:"";
+  position:absolute;
+  right:-120px;
+  top:-60px;
+  width:350px;
+  height:260px;
+  background:rgba(255,255,255,0.35);
+  border-radius:50%;
+}
+
+.top-content{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  padding:15px 25px;
+  gap:15px;
+}
+
+.logo{
+  width:100px;
+  height:100px;
+  object-fit:cover;
+  border-radius:70%;
+
+  /* white ring */
+  border:4px solid #ffffff;
+
+  /* outer glow */
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.4),
+    0 0 15px rgba(255,255,255,0.6);
+
+  background:#fff;
+}
+
+.top-content pre{
+  color:blue;
+  font-weight:bold;
+  font-size:14px;
+  margin: 0 27%;
+}
+
+.top-right{
+  margin-left:auto;
+  text-align:right;
+  font-size:12px;
+  color:white;
+}
+
+
+/* NAVBAR LIGHT BOX */
+.navbar{
+  background:linear-gradient(90deg,#00e5df,#0c8f8c);
+  display:flex;
+  justify-content:center;
+  padding:10px;
+  gap:6px;
+}
+.navbar a{
+  background:linear-gradient(#5bd2f4,#cceeee);
+  text-decoration: none;
+  padding:6px 14px;
+  border-radius:5px;
+  font-size:14px;
+  font-weight:bold;
+  color:black;
+  cursor:pointer;
+}
+
+.navbar a:hover,
+.navbar .active{
+  background:linear-gradient(#ffeeaa,#d4b45b);
+  color:black;
+}
+
+/* MAIN SECTION */
+.main-section{
+  display:flex;
+  gap:4px;
+  padding:15px;
+  background:black;
+}
+
+/* LEFT MENU */
+.left-menu{
+  width:25%;
+  background:linear-gradient(#c7b990,#e8dbb9);
+  text-align: center;
+}
+
+.left-menu ul{
+  list-style:none;
+}
+
+.left-menu li{
+  padding:10px;
+  border-bottom:1px solid #b89b3e;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.left-menu li:hover{
+  background:#fff3c4;
+}
+
+/*right  VIDEO STYLE */
+.right-image{
+  width:75%;
+}
+
+.home-video{
+  width:100%;
+  height:32\80px;        
+  object-fit:cover;   
+  display:block;
+  border:4px solid #fff;
+  background:black;
+}
+
+.Home home-video{
+  width:100%;
+  height:300px;      
+  object-fit:cover; 
+  border:4px solid #fff;
+  background:black;
+}
+
+/* BOTTOM IMAGES */
+.bottom-images{
+  display:flex;
+  gap:10px;
+  padding:15px;
+  background:black;
+}
+
+.bottom-images img{
+  width:40%;
+  height:270px;
+  object-fit:cover;
+  border:3px solid #fff;
+}
+
+/* WHY IIP ACADEMY BOX */
+.box{
+  width:30%;
+  background: linear-gradient(#1a1241, #1a1241);
+  border:2px solid #efebdf;
+  border-radius: 2VH;
+}
+
+.box h3{
+  color:white;
+  padding:10px;
+  font-size:25px;
+  text-align: center;
+}
+
+.box pre{
+  list-style:none;
+  padding:15px;
+  color: white;
+}
+
+/* COURSES BOX */
+.course-box{
+  width:30%;
+  background: linear-gradient(#f7e7b7, #d6b65c);
+  border:2px solid #b89b3e;
+}
+
+.course-box h3{
+  color:#fff;
+  padding:10px;
+  font-size:25px;
+  text-align: center;
+}
+
+.course-box pre{
+  list-style:none;
+  padding:15px;
+}
+
+/* MOBILE VIEW */
+@media(max-width:768px){
+  .top-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .top-right{
+    text-align:center;
+  }
+
+  .navbar{
+    flex-direction:column;
+  }
+
+  .navbar a{
+    width:100%;
+    text-align:center;
+  }
+}
+@media(max-width:768px){
+  .home-video{
+    height:220px;
+  }
+}
+
+@media(max-width:768px){
+  .content-row{
+    flex-direction:column;
+  }
+
+  .course-box{
+    width:100%;
+  }
+}
+
+@media(max-width:768px){
+
+  .main-section{
+    flex-direction:column;
+  }
+
+  .left-menu,
+  .right-content{
+    width:100%;
+  }
+
+  .bottom-images{
+    flex-direction:column;
+  }
+
+  .bottom-images img{
+    width:100%;
+  }
+}
+.footer{
+  background: linear-gradient(90deg,#00e5df,#0c8f8c);
+  color:#003333;
+  text-align:center;
+  padding:10px 0;
+  font-size:14px;
+  border-top:2px solid #008c8c;
+}
+
+.footer a{
+  color:#003333;
+  text-decoration:none;
+  margin:0 8px;
+  font-weight:bold;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
